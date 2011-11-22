@@ -22,7 +22,7 @@ public class stringSelectionShort {
 			String resultado="";
 			
 			for (int i = 0; i < palavra.length; i++) {
-				// find the index of the ith smallest value
+
 				int menor = i;
 				for (int j = i+1; j < palavra.length; j++) {
 					if (palavra[j].compareTo(palavra[menor]) < 0){
@@ -30,7 +30,7 @@ public class stringSelectionShort {
 					}
 				}
 
-				// swap the ith smallest value into entry i-1
+				
 				if(menor !=i){
 				String temp = palavra[menor];
 				palavra[menor] = palavra[i];
