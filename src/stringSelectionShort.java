@@ -38,10 +38,10 @@ public class stringSelectionShort {
 			for (int i = 0; i < palavra.length; i++) {
 				int menor = i;
 				for (int j = i + 1; j < palavra.length; j++) {
-					String palavraAtual = palavra[j];
-					String palavraPosterior = palavra[menor];
+					String palavraPosterior = palavra[j];
+					String palavraAtual = palavra[menor];
 
-					if(palavraAtual.length() < palavraPosterior.length()) {
+					if(palavraPosterior.length() < palavraAtual.length()) {
 						menor = j;
 					}
 				}
