@@ -1,22 +1,37 @@
- import java.util.Scanner;
-
+import java.util.Scanner;
+/**
+ * 
+ * @author Cliente
+ *
+ */
 public class stringSelectionShort {
-
+/**
+ * 
+ * @param args
+ */
 		public static void main(String[] args){
 			Scanner entrada = new Scanner(System.in);
-
-			while (true) {
+			
 				System.out.print("Digite uma frase :");
 				String resultado = selectionSort(entrada.nextLine());
-				System.out.println(resultado);
-			}
+				System.out.println("Sua frase ordenada ficou assim: "+resultado);
+				continuar();
 
 		}
+/**
+* 
+* @param frase
+* @return
+*/
 		public static String[] separaFrase(String frase) {
 			return frase.split(" ");
 		}
-
-		static String selectionSort(String frase){
+/**
+ * 
+ * @param frase
+ * @return
+ */
+		public static String selectionSort(String frase){
 			String[] palavra = separaFrase(frase);
 			String resultado="";
 			
@@ -40,5 +55,23 @@ public class stringSelectionShort {
 				resultado += palavra[i] + " ";
 			}
 			return resultado.trim();
+		}
+
+		private static void continuar(){
+			Scanner entrada = new Scanner(System.in);
+
+			System.out.println("Ordenar outra frase?:");
+			System.out.println("Digite \"1\" para SIM:");
+			System.out.println("Digite \"2\" para NÃO:");
+			int continua = entrada.nextInt(); 
+
+			switch (continua) {
+			case 1:
+				main(null);
+				break;
+			case 2:
+				System.out.print("\\-----Programa finalizado------\\");
+				break;
+			}
 		}
 }
