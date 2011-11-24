@@ -1,7 +1,8 @@
 import java.util.Scanner;
 /**
- * 
- * @author Cliente
+ *
+ * @author Douglas Lenfers
+ * @author Patrick Menezes
  *
  */
 public class stringSelectionShort {
@@ -20,16 +21,24 @@ public class stringSelectionShort {
 		}
 /**
 * 
-* @param frase
-* @return
+* @param frase 			Texto digitado pelo usuario.
+* @return 			Separa o texto digitado pelos espaços.
 */
 		public static String[] separaFrase(String frase) {
 			return frase.split(" ");
 		}
 /**
  * 
- * @param frase
- * @return
+ * 
+ * @see separaFrase(frase) 	Associação entre o metodo "selectionSort" e "separaFrase".
+ * @param frase 		Parametro de entrada de dados.
+ * @param palavra 		Array para armazenamento dos dados vindos de separaFrase.
+ * @param i 			Indice do array.
+ * @param menor 		Recebe o indice i.
+ * @param j 			Indice do array mais uma posição.
+ * @param palavraPosterior	
+ * @param resultado 		Recebe ele mesmo e o array palavra com indice e um espaço.
+ * @return	 		frase ordenada sem os espaços no inicio e no fim. 
  */
 		public static String selectionSort(String frase){
 			String[] palavra = separaFrase(frase);
