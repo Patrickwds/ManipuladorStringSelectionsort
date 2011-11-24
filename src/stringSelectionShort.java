@@ -32,11 +32,13 @@ public class stringSelectionShort {
  * 
  * @see separaFrase(frase) 	Associação entre o metodo "selectionSort" e "separaFrase".
  * @param frase 		Parametro de entrada de dados.
- * @param palavra 		Array para armazenamento dos dados vindos de separaFrase.
+ * @param palavra 		Array para armazenamento dos dados vindos de "separaFrase".
  * @param i 			Indice do array.
- * @param menor 		Recebe o indice i.
+ * @param menor 		Recebe o indice "i".
  * @param j 			Indice do array mais uma posição.
- * @param palavraPosterior	
+ * @param palavraPosterior	Array palavra tendo como indice "j".
+ * @param palavraAtual		Array palavra tendo como indice "menor".
+ * @param temp			String temporaria.
  * @param resultado 		Recebe ele mesmo e o array palavra com indice e um espaço.
  * @return	 		frase ordenada sem os espaços no inicio e no fim. 
  */
