@@ -6,7 +6,8 @@ import java.util.Scanner;
  *
  */
 public class stringSelectionShort {
-/**
+
+/**Método principal responsavel por obter dados, e imprimir o resultado.
  * 
  * @param args
  */
@@ -19,7 +20,7 @@ public class stringSelectionShort {
 				continuar();
 
 		}
-/**
+/**Método responsavel pela separação da frase ou texto digitados no metodo principal.
 * 
 * @param frase 			Texto digitado pelo usuario.
 * @return 			Separa o texto digitado pelos espaços.
