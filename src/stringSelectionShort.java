@@ -34,7 +34,7 @@ public class stringSelectionShort {
  * método anterior, o primeiro "for" é responsável por varrer todas as posições de 
  * "palavra" começando na primeira posição, o segundo "for" tem como inicio a segunda posição 
  * e ambos tem como fim o numero de palavras, dentro do segundo "for" temos uma condição, 
- * que compara a primeira palavra com a segunda, se a condição não for atendida o o segundo 
+ * que compara a primeira palavra com a segunda, se a condição não for atendida o segundo 
  * "for" implementa mais uma posição comparando a primeira palavra com a terceira e assim 
  * por diante até encontrar uma menor que a palavra inicial, quando isto ocorre a uma troca o 
  * int "menor" recebe o valor de "j", saindo do segundo "for". Ficando então somente dentro
