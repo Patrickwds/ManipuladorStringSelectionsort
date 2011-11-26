@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class stringSelectionShort {
 
-/**Método principal responsavel por obter dados, e imprimir o resultado.
+/**Método principal responsável por obter dados, e imprimir o resultado.
  * 
  * @param args
  */
@@ -20,7 +20,7 @@ public class stringSelectionShort {
 				continuar();
 
 		}
-/**Método responsavel pela separação da frase ou texto digitados no metodo principal.
+/**Método responsável pela separação da frase ou texto digitados no metodo principal.
 * 
 * @param frase 			Texto digitado pelo usuario.
 * @return 			Separa o texto digitado pelos espaços.
@@ -28,32 +28,32 @@ public class stringSelectionShort {
 		public static String[] separaFrase(String frase) {
 			return frase.split(" ");
 		}
-/**Método responsavel pela ondenação das palavras e sua montagem em frase novamente.
+/**Método responsável pela ondenação das palavras e sua montagem em frase novamente.
  * 
  * No inicio o array "palavra" recebe em suas posições cada palavra que foi separada no 
  * método anterior, o primeiro "for" é responsável por varrer todas as posições de 
  * "palavra" começando na primeira posição, o segundo "for" tem como inicio a segunda posição 
- * e ambos tem como fim o numero de palavras, dentro do segundo "for" temos uma condição, 
+ * e ambos tem como fim o número de palavras, dentro do segundo "for" temos uma condição, 
  * que compara a primeira palavra com a segunda, se a condição não for atendida o segundo 
  * "for" implementa mais uma posição comparando a primeira palavra com a terceira e assim 
- * por diante até encontrar uma menor que a palavra inicial, quando isto ocorre a uma troca o 
- * int "menor" recebe o valor de "j", saindo do segundo "for". Ficando então somente dentro
- * do primeiro "for" que também tem uma condição, se "menor" for diferente do índice "i" á 
+ * por diante até encontrar uma menor que a palavra inicial, quando isto ocorre há uma troca, o 
+ * int "menor" recebe o valor de "j", saindo do segundo "for". Ficando, então, somente dentro
+ * do primeiro "for", que também tem uma condição, se "menor" for diferente do índice "i" há 
  * uma troca, a posição no array da palavra inicial fica com o valor da palavra posterior 
- * considerada menor e o mesmo ocorre com a palavra posterior fica com o valor da palavra inicial
- * com o auxilio de uma variável temporária a String "temp". 
+ * considerada menor e o mesmo ocorre com a palavra posterior, que fica com o valor da palavra inicial
+ * com o auxilio de uma variável temporaria a String "temp". 
  *
  * 
  * @see separaFrase(frase) 	Associação entre o metodo "selectionSort" e "separaFrase".
- * @param frase 		Parametro de entrada de dados.
- * @param palavra 		Írray para armazenamento dos dados vindos de "separaFrase".
- * @param i 			Indice do array.
+ * @param frase 		Parâmetro de entrada de dados.
+ * @param palavra 		Array para armazenamento dos dados vindos de "separaFrase".
+ * @param i 			Índice do array.
  * @param j 			Índice do array mais uma posição.
- * @param menor 		Recebe um indice.
- * @param palavraPosterior	Array palavra tendo como indice "j".
- * @param palavraAtual		Array palavra tendo como indice "menor".
- * @param temp			String temporaria.
- * @param resultado 		Recebe ele mesmo e o array palavra com indice e um espaço.
+ * @param menor 		Recebe um índice.
+ * @param palavraPosterior	Array palavra tendo como índice "j".
+ * @param palavraAtual		Array palavra tendo como índice "menor".
+ * @param temp			String temporária.
+ * @param resultado 		Recebe ele mesmo e o array palavra com índice e um espaço.
  * @return	 		frase ordenada sem os espaços no inicio e no fim. 
  */
 		public static String selectionSort(String frase){
@@ -81,7 +81,10 @@ public class stringSelectionShort {
 			}
 			return resultado.trim();
 		}
-
+/**Método que da continuidade ao programa
+ * 
+ * caso escolha "1" o método chama o main, se escolher "2" imprimi uma informação ao usuáio e o programa é finalizado.
+ */
 		private static void continuar(){
 			Scanner entrada = new Scanner(System.in);
 
